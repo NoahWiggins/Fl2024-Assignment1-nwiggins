@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        body {
+            background-color: darkgray;
+
+        }
+        #CoverArt {
+            border-radius: 50%;
+        }
+        #Content {
+            text-align: center;
+        }
+        #shape {
+            border-radius: 50%; 
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Serif;
+            text-shadow: 0 0 1px #000;
+        }
+
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @-webkit-keyframes snowflakes-shake {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+
+            100% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall,snowflakes-shake;
+            -webkit-animation-duration: 10s,3s;
+            -webkit-animation-timing-function: linear,ease-in-out;
+            -webkit-animation-iteration-count: infinite,infinite;
+            -webkit-animation-play-state: running,running;
+            animation-name: snowflakes-fall,snowflakes-shake;
+            animation-duration: 10s,3s;
+            animation-timing-function: linear,ease-in-out;
+            animation-iteration-count: infinite,infinite;
+            animation-play-state: running,running
+        }
+
+            .snowflake:nth-of-type(0) {
+                left: 1%;
+                -webkit-animation-delay: 0s,0s;
+                animation-delay: 0s,0s
+            }
+
+            .snowflake:nth-of-type(1) {
+                left: 10%;
+                -webkit-animation-delay: 1s,1s;
+                animation-delay: 1s,1s
+            }
+
+            .snowflake:nth-of-type(2) {
+                left: 20%;
+                -webkit-animation-delay: 6s,.5s;
+                animation-delay: 6s,.5s
+            }
+
+            .snowflake:nth-of-type(3) {
+                left: 30%;
+                -webkit-animation-delay: 4s,2s;
+                animation-delay: 4s,2s
+            }
+
+            .snowflake:nth-of-type(4) {
+                left: 40%;
+                -webkit-animation-delay: 2s,2s;
+                animation-delay: 2s,2s
+            }
+
+            .snowflake:nth-of-type(5) {
+                left: 50%;
+                -webkit-animation-delay: 8s,3s;
+                animation-delay: 8s,3s
+            }
+
+            .snowflake:nth-of-type(6) {
+                left: 60%;
+                -webkit-animation-delay: 6s,2s;
+                animation-delay: 6s,2s
+            }
+
+            .snowflake:nth-of-type(7) {
+                left: 70%;
+                -webkit-animation-delay: 2s,1s;
+                animation-delay: 2s,1s
+            }
+
+            .snowflake:nth-of-type(8) {
+                left: 80%;
+                -webkit-animation-delay: 1s,0s;
+                animation-delay: 1s,0s
+            }
+
+            .snowflake:nth-of-type(9) {
+                left: 90%;
+                -webkit-animation-delay: 3s,1s;
+                animation delay:3s,1s
+            }
+
+        .demo a {
+            font-family: 'Raleway', sans-serif;
+            color: #000;
+        }
+
+        .snowflake img {
+            height: 40px;
+            bottom: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--SRI for bats-->
+    <script src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" integrity="sha384-9wZPk0XgWKKpmben0haiyxdsh2bLwGIWxd5+loL1Vm0HGqafagWRfxCIh/W9NTgz" crossorigin="anonymous"></script>
+
+    <div id="Content">
+        <h1 id="Title">The Dark Knight</h1>
+        <img id="CoverArt" src="The_Dark_Knight_(2008_film).jpg">
+        <h5 id="Rating">
+            <span class="imdbRatingPlugin" data-user="ur187780537" data-title="tt0468569" data-style="p1">
+                <a href="https://www.imdb.com/title/tt0468569/?ref_=plg_rt_1">
+                    <img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="The Dark Knight (2008) on IMDb" />
+                </a>
+            </span>
+            <script>(function (d, s, id) { var js, stags = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js"; stags.parentNode.insertBefore(js, stags); })(document, "script", "imdb-rating-api");</script>
+        </h5>
+        <iframe width="966" height="411" src="https://www.youtube.com/embed/EXeTwQWrcwY" title="The Dark Knight (2008) Official Trailer #1 - Christopher Nolan Movie HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <p id="Summary">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.</p>
+        <b>Actors</b>
+        <br>
+        <ul id="Actors">
+            <li>Christian Bale as <b>Batman</b></li>
+            <li>Heath Ledger as <b>The Joker</b></li>
+            <li>Aaron Eckhart as <b>Two Face</b></li>
+            <li>Gary Oldman as <b>Commisioner Gordan</b></li>
+            <li>Maggie Gyllenhaal as <b>Rachel Dawes</b></li>
+        </ul>
+    </div>
+
+    <div class="snowflakes">
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+        <div class="snowflake">
+            <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
+        </div>
+    </div>
+</body>
+</html>
